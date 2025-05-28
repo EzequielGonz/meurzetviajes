@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meurzet Viajes y Turismo - Experiencias Únicas</title>
+    <title>Meurzet Viajes y Turismo - Líder en Excursiones</title>
     <link href="src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -13,16 +13,28 @@
             font-family: 'Poppins', sans-serif;
         }
         .gradient-primary {
-            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            background: linear-gradient(135deg, #FF6B00 0%, #FF8C00 100%);
         }
         .gradient-secondary {
-            background: linear-gradient(135deg, #2c5282 0%, #4299e1 100%);
+            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
         }
         .hover-scale {
             transition: transform 0.3s ease;
         }
         .hover-scale:hover {
             transform: scale(1.05);
+        }
+        .text-orange {
+            color: #FF6B00;
+        }
+        .bg-orange {
+            background-color: #FF6B00;
+        }
+        .hover\:bg-orange:hover {
+            background-color: #FF8C00;
+        }
+        .border-orange {
+            border-color: #FF6B00;
         }
     </style>
 </head>
@@ -31,14 +43,18 @@
     <nav class="fixed w-full bg-white shadow-lg z-50">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold text-blue-800">Meurzet Viajes</div>
+                <div class="flex items-center">
+                    <img src="https://i.ibb.co/Fbz989ws/MEURZET-3-Vector.png" 
+                         alt="Meurzet Viajes Logo" 
+                         class="h-20 w-auto">
+                </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="hover:text-blue-600 transition font-medium">Inicio</a>
-                    <a href="#servicios" class="hover:text-blue-600 transition font-medium">Servicios</a>
-                    <a href="#destinos" class="hover:text-blue-600 transition font-medium">Destinos</a>
-                    <a href="#testimonios" class="hover:text-blue-600 transition font-medium">Testimonios</a>
-                    <a href="#ofertas" class="hover:text-blue-600 transition font-medium">Ofertas</a>
-                    <a href="#contacto" class="hover:text-blue-600 transition font-medium">Contacto</a>
+                    <a href="#inicio" class="hover:text-orange transition font-medium">Inicio</a>
+                    <a href="#servicios" class="hover:text-orange transition font-medium">Servicios</a>
+                    <a href="#destinos" class="hover:text-orange transition font-medium">Destinos</a>
+                    <a href="#testimonios" class="hover:text-orange transition font-medium">Testimonios</a>
+                    <a href="#ofertas" class="hover:text-orange transition font-medium">Ofertas</a>
+                    <a href="#contacto" class="hover:text-orange transition font-medium">Contacto</a>
                 </div>
                 <button class="md:hidden">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,32 +72,32 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
                     <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                        Descubre el Mundo con <span class="text-yellow-400">Meurzet Viajes</span>
+                        Líder en <span class="text-blue-100">Excursiones</span> y Viajes
                     </h1>
                     <p class="text-xl text-white mb-8 leading-relaxed">
                         Más de 35 opciones de paseos y 16 puntos de embarque en tres provincias. 
-                        Creamos momentos únicos y recuerdos para toda la vida.
+                        Más de 4.500 pasajeros anuales y 11 salidas mensuales.
                     </p>
                     <div class="flex space-x-4">
-                        <button class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-yellow-300 transition hover-scale">
+                        <a href="https://wa.me/543435418471" target="_blank" class="bg-white text-orange px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition hover-scale">
                             ¡Comienza tu aventura!
-                        </button>
-                        <button class="border-2 border-white text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-blue-900 transition hover-scale">
-                            Ver Destinos
+                        </a>
+                        <button class="border-2 border-white text-orange px-8 py-3 rounded-full hover:text-orange font-bold hover:bg-white transition hover-scale">
+                            Ver Excursiones
                         </button>
                     </div>
                 </div>
                 <div data-aos="fade-left" class="hidden md:block">
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" 
-                             alt="Viajes" 
+                        <img src="img/WhatsApp Image 2025-05-19 at 12.12.23.jpeg" 
+                             alt="Excursiones Meurzet" 
                              class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-500">
                         <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-xl">
                             <div class="flex items-center space-x-2">
-                                <div class="text-yellow-400 text-2xl">⭐</div>
+                                <div class="text-orange text-2xl">⭐</div>
                                 <div>
-                                    <p class="font-bold text-blue-900">Más de 10,000</p>
-                                    <p class="text-sm text-gray-600">Clientes Satisfechos</p>
+                                    <p class="font-bold text-blue-900">Segunda Empresa Líder</p>
+                                    <p class="text-sm text-gray-600">en ventas de la región</p>
                                 </div>
                             </div>
                         </div>
@@ -99,66 +115,86 @@
                     Nuestros Servicios
                 </h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">
-                    Ofrecemos una amplia gama de servicios para hacer de tu viaje una experiencia inolvidable
+                    Especialistas en organización de viajes de un día y experiencias turísticas únicas
                 </p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-8 rounded-xl shadow-lg hover:shadow-xl transition bg-white hover-scale" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-blue-600 text-4xl mb-6">🌍</div>
+                    <div class="text-orange text-4xl mb-6">🌍</div>
                     <h3 class="text-xl font-bold mb-4 text-blue-900">Excursiones Diarias</h3>
                     <p class="text-gray-600 mb-4">Más de 35 opciones de paseos en el día con múltiples puntos de embarque.</p>
                     <ul class="text-gray-600 space-y-2">
                         <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-orange" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            Puntos de embarque estratégicos
+                            Escapadas de un día
                         </li>
                         <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-orange" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            Guías profesionales
+                            Mini turismo
                         </li>
                     </ul>
                 </div>
                 <div class="p-8 rounded-xl shadow-lg hover:shadow-xl transition bg-white hover-scale" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-blue-600 text-4xl mb-6">✈️</div>
+                    <div class="text-orange text-4xl mb-6">✈️</div>
                     <h3 class="text-xl font-bold mb-4 text-blue-900">Viajes Nacionales e Internacionales</h3>
-                    <p class="text-gray-600 mb-4">Paquetes completos con hotelería y excursiones incluidas.</p>
+                    <p class="text-gray-600 mb-4">Comercializamos opciones de viajes con operadores mayoristas líderes.</p>
                     <ul class="text-gray-600 space-y-2">
                         <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-orange" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            Hoteles seleccionados
+                            Operadores líderes
                         </li>
                         <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-orange" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            Traslados incluidos
+                            Destinos exclusivos
                         </li>
                     </ul>
                 </div>
                 <div class="p-8 rounded-xl shadow-lg hover:shadow-xl transition bg-white hover-scale" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-blue-600 text-4xl mb-6">🚌</div>
-                    <h3 class="text-xl font-bold mb-4 text-blue-900">Traslados Grupales</h3>
-                    <p class="text-gray-600 mb-4">Servicio de traslados para grupos con la mejor comodidad.</p>
+                    <div class="text-orange text-4xl mb-6">🚌</div>
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">Innovación Constante</h3>
+                    <p class="text-gray-600 mb-4">Comprometidos con la mejora continua y la innovación en opciones de paseos.</p>
                     <ul class="text-gray-600 space-y-2">
                         <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-orange" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            Vehículos modernos
+                            Paseos multidestino
                         </li>
                         <li class="flex items-center">
-                            <svg class="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                            <svg class="w-4 h-4 mr-2 text-orange" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
-                            Conductores profesionales
+                            Experiencias únicas
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadísticas Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 bg-white rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="text-4xl font-bold text-orange mb-2">35+</div>
+                    <p class="text-gray-600">Opciones de Paseos</p>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-orange mb-2">4,500+</div>
+                    <p class="text-gray-600">Pasajeros Anuales</p>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-orange mb-2">11</div>
+                    <p class="text-gray-600">Salidas Mensuales</p>
                 </div>
             </div>
         </div>
@@ -177,42 +213,42 @@
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="relative overflow-hidden rounded-xl shadow-lg group hover-scale" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84" 
+                    <img src="img/WhatsApp Image 2025-05-19 at 12.12.22.jpeg" 
                          alt="Entre Ríos" 
                          class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
                         <h3 class="text-white text-2xl font-bold mb-2">Entre Ríos</h3>
                         <p class="text-white mb-4">Descubre la belleza natural y cultural de Entre Ríos</p>
-                        <button class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition">
+                        <a href="https://wa.me/543435418471" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition inline-block">
                             Explorar
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-xl shadow-lg group hover-scale" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84" 
+                    <img src="img/WhatsApp Image 2025-05-15 at 19.06.14.jpeg" 
                          alt="Santa Fe" 
                          class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
                         <h3 class="text-white text-2xl font-bold mb-2">Santa Fe</h3>
                         <p class="text-white mb-4">Explora la rica historia y cultura de Santa Fe</p>
-                        <button class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition">
+                        <a href="https://wa.me/543435418471" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition inline-block">
                             Explorar
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-xl shadow-lg group hover-scale" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1519834785169-98be25ec3f84" 
+                    <img src="img/486146505_1159015762685755_2742330874875932381_n.jpg" 
                          alt="Buenos Aires" 
                          class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
                         <h3 class="text-white text-2xl font-bold mb-2">Buenos Aires</h3>
                         <p class="text-white mb-4">Vive la vibrante vida de la capital argentina</p>
-                        <button class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition">
+                        <a href="https://wa.me/543435418471" target="_blank" class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition inline-block">
                             Explorar
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -274,84 +310,88 @@
         </div>
     </section>
 
-    <!-- Ofertas Section -->
-    <section id="ofertas" class="py-20 gradient-secondary">
+    <!-- Experiencias Destacadas Section -->
+    <section id="experiencias" class="py-20 gradient-secondary">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                    Ofertas Especiales
+                    Experiencias Destacadas
                 </h2>
                 <p class="text-white/80 max-w-2xl mx-auto">
-                    Aprovecha nuestras mejores promociones y descuentos exclusivos
+                    Descubre nuestras experiencias más populares y únicas
                 </p>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white rounded-xl p-8 shadow-xl hover-scale" data-aos="fade-right">
                     <div class="flex justify-between items-start mb-6">
                         <div>
-                            <h3 class="text-2xl font-bold text-blue-900 mb-2">Paquete Familiar</h3>
-                            <p class="text-gray-600">Disfruta de un viaje en familia con descuentos especiales</p>
+                            <h3 class="text-2xl font-bold text-blue-900 mb-2">Excursiones de Un Día</h3>
+                            <p class="text-gray-600">Perfectas para una escapada rápida y memorable</p>
                         </div>
-                        <div class="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold">
-                            20% OFF
+                        <div class="bg-orange text-white px-4 py-2 rounded-full font-bold">
+                            Popular
                         </div>
                     </div>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Alojamiento incluido
-                        </li>
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Desayuno buffet
-                        </li>
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Excursiones guiadas
-                        </li>
-                    </ul>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center">
+                            <img src="img/432415264_924047386388062_7187974068155795738_n.jpg" 
+                                 alt="Excursión" 
+                                 class="w-24 h-24 object-cover rounded-lg mr-4">
+                            <div>
+                                <h4 class="font-bold text-blue-900">Paseos Temáticos</h4>
+                                <p class="text-sm text-gray-600">Descubre lugares únicos con guías especializados</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="img/489776667_1173223891264942_1855027627184654787_n.jpg" 
+                                 alt="Mini Turismo" 
+                                 class="w-24 h-24 object-cover rounded-lg mr-4">
+                            <div>
+                                <h4 class="font-bold text-blue-900">Mini Turismo</h4>
+                                <p class="text-sm text-gray-600">Experiencias cortas pero inolvidables</p>
+                            </div>
+                        </div>
+                    </div>
                     <button class="w-full bg-blue-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-800 transition">
-                        Reservar Ahora
+                        <a href="https://wa.me/543435418471" target="_blank" class="block w-full">
+                            Ver Excursiones
+                        </a>
                     </button>
                 </div>
                 <div class="bg-white rounded-xl p-8 shadow-xl hover-scale" data-aos="fade-left">
                     <div class="flex justify-between items-start mb-6">
                         <div>
-                            <h3 class="text-2xl font-bold text-blue-900 mb-2">Escape Romántico</h3>
-                            <p class="text-gray-600">Vive una experiencia romántica inolvidable</p>
+                            <h3 class="text-2xl font-bold text-blue-900 mb-2">Viajes Personalizados</h3>
+                            <p class="text-gray-600">Creamos la experiencia perfecta para ti</p>
                         </div>
-                        <div class="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold">
-                            15% OFF
+                        <div class="bg-orange text-white px-4 py-2 rounded-full font-bold">
+                            Premium
                         </div>
                     </div>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Suite de lujo
-                        </li>
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Cena romántica
-                        </li>
-                        <li class="flex items-center text-gray-600">
-                            <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                            </svg>
-                            Masaje para dos
-                        </li>
-                    </ul>
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center">
+                            <img src="img/489533189_1173222321265099_6336727527988147377_n.jpg" 
+                                 alt="Grupos" 
+                                 class="w-24 h-24 object-cover rounded-lg mr-4">
+                            <div>
+                                <h4 class="font-bold text-blue-900">Grupos y Empresas</h4>
+                                <p class="text-sm text-gray-600">Experiencias adaptadas a grupos grandes</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="img/487108457_1163521955568469_2933722316331592298_n.jpg" 
+                                 alt="Personalizado" 
+                                 class="w-24 h-24 object-cover rounded-lg mr-4">
+                            <div>
+                                <h4 class="font-bold text-blue-900">Servicio VIP</h4>
+                                <p class="text-sm text-gray-600">Atención personalizada y exclusiva</p>
+                            </div>
+                        </div>
+                    </div>
                     <button class="w-full bg-blue-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-800 transition">
-                        Reservar Ahora
+                        <a href="https://wa.me/543435418471" target="_blank" class="block w-full">
+                            Consultar
+                        </a>
                     </button>
                 </div>
             </div>
@@ -382,7 +422,7 @@
                                 </div>
                                 <div>
                                     <p class="font-medium text-gray-900">Teléfono</p>
-                                    <p class="text-gray-600">(123) 456-7890</p>
+                                    <p class="text-gray-600">+54 343 5418471</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -453,7 +493,7 @@
                     <h3 class="text-xl font-bold mb-4">Contacto</h3>
                     <ul class="space-y-2 text-gray-400">
                         <li>Email: info@meurzet.com</li>
-                        <li>Tel: (123) 456-7890</li>
+                        <li>Tel: +54 343 5418471</li>
                         <li>Av. Principal 123, Ciudad</li>
                     </ul>
                 </div>
