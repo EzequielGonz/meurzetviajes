@@ -11,6 +11,9 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+            position: relative;
         }
         .gradient-primary {
             background: linear-gradient(135deg, #FF6B00 0%, #FF8C00 100%);
@@ -36,6 +39,50 @@
         .border-orange {
             border-color: #FF6B00;
         }
+        .container {
+            max-width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px;
+            }
+        }
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px;
+            }
+        }
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px;
+            }
+        }
+        .nav-link {
+            white-space: nowrap;
+            font-size: 0.875rem;
+        }
+        @media (max-width: 768px) {
+            .nav-link {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.5rem;
+            }
+            nav .container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            nav img {
+                height: 3rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -48,26 +95,26 @@
                          alt="Meurzet Viajes Logo" 
                          class="h-20 w-auto">
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="hover:text-orange transition font-medium">Inicio</a>
-                    <a href="#servicios" class="hover:text-orange transition font-medium">Servicios</a>
-                    <a href="#destinos" class="hover:text-orange transition font-medium">Destinos</a>
-                    <a href="#testimonios" class="hover:text-orange transition font-medium">Testimonios</a>
-                    <a href="#ofertas" class="hover:text-orange transition font-medium">Ofertas</a>
-                    <a href="#contacto" class="hover:text-orange transition font-medium">Contacto</a>
+                <div class="flex space-x-8">
+                    <a href="#inicio" class="hover:text-orange transition font-medium nav-link">Inicio</a>
+                    <a href="#servicios" class="hover:text-orange transition font-medium nav-link">Servicios</a>
+                    <a href="#destinos" class="hover:text-orange transition font-medium nav-link">Destinos</a>
+                    <a href="#testimonios" class="hover:text-orange transition font-medium nav-link">Testimonios</a>
+                    <a href="#ofertas" class="hover:text-orange transition font-medium nav-link">Ofertas</a>
+                    <a href="#contacto" class="hover:text-orange transition font-medium nav-link">Contacto</a>
                 </div>
-                <button class="md:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="inicio" class="pt-20 min-h-screen flex items-center gradient-primary relative overflow-hidden">
-        <div class="absolute inset-0 bg-black opacity-30"></div>
+    <section id="inicio" class="pt-20 min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 w-full h-full">
+            <video class="w-full h-full object-cover" autoplay muted loop playsinline>
+                <source src="img/5966596_Man_Woman_3840x2160.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-black opacity-50 backdrop-blur-sm"></div>
+        </div>
         <div class="container mx-auto px-4 py-16 relative z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
@@ -82,9 +129,9 @@
                         <a href="https://wa.me/543435418471" target="_blank" class="bg-white text-orange px-8 py-3 rounded-full font-bold hover:bg-blue-50 transition hover-scale">
                             ¡Comienza tu aventura!
                         </a>
-                        <button class="border-2 border-white text-orange px-8 py-3 rounded-full hover:text-orange font-bold hover:bg-white transition hover-scale">
+                        <a href="catalogo.html" class="border-2 border-white text-white px-8 py-3 rounded-full hover:text-orange font-bold hover:bg-white hover:text-orange-400 transition hover-scale">
                             Ver Excursiones
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div data-aos="fade-left" class="hidden md:block">
@@ -641,7 +688,7 @@
                         </div>
                     </div>
                     <button class="w-full bg-blue-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-800 transition">
-                        <a href="https://wa.me/543435418471" target="_blank" class="block w-full">
+                        <a href="https://wa.me/543435418471?text=Hola,%20me%20gustaría%20información%20sobre%20viajes%20personalizados" target="_blank" class="block w-full">
                             Consultar
                         </a>
                     </button>
