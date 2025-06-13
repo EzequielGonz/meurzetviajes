@@ -95,7 +95,16 @@
                          alt="Meurzet Viajes Logo" 
                          class="h-20 w-auto">
                 </div>
-                <div class="flex space-x-8">
+                <!-- Hamburger menu button for mobile -->
+                <div class="md:hidden">
+                    <button id="menu-button" class="text-gray-500 hover:text-orange focus:outline-none focus:text-orange">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Desktop navigation -->
+                <div class="hidden md:flex space-x-8" id="desktop-menu">
                     <a href="#inicio" class="hover:text-orange transition font-medium nav-link">Inicio</a>
                     <a href="#servicios" class="hover:text-orange transition font-medium nav-link">Servicios</a>
                     <a href="#destinos" class="hover:text-orange transition font-medium nav-link">Destinos</a>
@@ -104,6 +113,15 @@
                     <a href="#contacto" class="hover:text-orange transition font-medium nav-link">Contacto</a>
                 </div>
             </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <a href="#inicio" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Inicio</a>
+            <a href="#servicios" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Servicios</a>
+            <a href="#destinos" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Destinos</a>
+            <a href="#testimonios" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Testimonios</a>
+            <a href="#ofertas" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Ofertas</a>
+            <a href="#contacto" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contacto</a>
         </div>
     </nav>
 
@@ -281,6 +299,11 @@
             </div>
             <div class="flex justify-center" data-aos="fade-up" data-aos-delay="200">
                 <img src="img/redmeurzet.jpg" alt="Red de Vendedores de Meurzet" class="h-auto rounded-lg shadow-xl" style="max-width: 500px;">
+            </div>
+            <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://wa.me/543435418471" target="_blank" class="inline-block text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition hover-scale" style="background-color: #22c55e;">
+                    <i class="fab fa-whatsapp mr-2 text-white"></i> ¡Únete a la Red por WhatsApp!
+                </a>
             </div>
         </div>
     </section>
@@ -528,21 +551,21 @@
                     Explora nuestra colección de viajes y experiencias
                 </p>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
                 <div class="rounded-lg shadow-lg overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="100">
-                    <img src="img/one.jpg" alt="Imagen Catálogo 1" class="w-full h-128 object-cover">
+                    <img src="img/one.jpg" alt="Imagen Catálogo 1" class="w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-lg overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="200">
-                    <img src="img/two.jpg" alt="Imagen Catálogo 2" class="w-full h-128 object-cover">
+                    <img src="img/two.jpg" alt="Imagen Catálogo 2" class="w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-lg overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="300">
-                    <img src="img/three.jpg" alt="Imagen Catálogo 3" class="w-full h-128 object-cover">
+                    <img src="img/three.jpg" alt="Imagen Catálogo 3" class="w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-lg overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="400">
-                    <img src="img/four.jpg" alt="Imagen Catálogo 4" class="w-full h-128 object-cover">
+                    <img src="img/four.jpg" alt="Imagen Catálogo 4" class="w-full object-cover">
                 </div>
                 <div class="rounded-lg shadow-lg overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="500">
-                    <img src="img/five.jpg" alt="Imagen Catálogo 5" class="w-full h-128 object-cover">
+                    <img src="img/five.jpg" alt="Imagen Catálogo 5" class="w-full object-cover">
                 </div>
             </div>
         </div>
@@ -655,8 +678,23 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script>
         AOS.init();
+
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
     </script>
 </body>
 </html>
